@@ -6,9 +6,8 @@ const cors = require("cors");
 
 const option = {
     origin: ["https://imagegalleryhub.netlify.app"],
-    methods: ["GET", "POST", "DELETE", "PUT"],
-    credentials: true,
-    origin: true,
+    methods: ["GET", "POST", "DELETE", "PUT"]
+    
 }
 const port  =  process.env.PORT || 3001 ;
 app.use(express.json());
