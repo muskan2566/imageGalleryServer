@@ -4,10 +4,14 @@ require("./db/connection");
 const imgData = require("./db/schema");
 const cors = require("cors");
 
+const option = {
+    origin : "https://imagegalleryhub.netlify.app/",
+    optionSuccessStatus : 200
+}
 const port  =  process.env.PORT || 3001 ;
 app.use(express.json());
 app.use(express.urlencoded({extended:false}))
-app.use(cors());
+app.use(cors(option));
 
 
 app.get('/show', (req, res) => {
