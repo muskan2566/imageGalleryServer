@@ -5,7 +5,7 @@ const imgData = require("./db/schema");
 const cors = require("cors");
 
 const option = {
-    origin : "https://imagegalleryhub.netlify.app/",
+    origin : ["https://imagegalleryhub.netlify.app/"],
     optionSuccessStatus : 200
 }
 const port  =  process.env.PORT || 3001 ;
